@@ -1,0 +1,89 @@
+.page {
+  max-width: 1240px;
+  margin: 0 auto;
+  animation: dxgFade 0.3s ease both;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.search {
+  flex: 1;
+  min-width: 220px;
+  max-width: 340px;
+}
+
+.filter {
+  width: 160px;
+}
+
+.taskName {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #1c2620;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.taskMeta {
+  font-size: 11px;
+  color: #9aa097;
+  margin-top: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.client {
+  font-size: 13px;
+  color: #4a544c;
+  font-weight: 600;
+}
+
+.type {
+  font-size: 12.5px;
+  color: #6c726a;
+}
+
+.statusTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 4px 9px;
+  border-radius: 6px;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.priority {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.priorityDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 2px;
+}
+
+.updated {
+  font-size: 12.5px;
+  color: #9aa097;
+}
+
+.row {
+  cursor: pointer;
+}

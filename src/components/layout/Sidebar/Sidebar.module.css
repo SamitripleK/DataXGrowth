@@ -1,0 +1,151 @@
+.sidebar {
+  width: 240px;
+  flex: none;
+  background: #ffffff;
+  border-right: 1px solid #ededeb;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 14px 16px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+/* Rendered inside the mobile navigation Drawer. */
+.sidebarDrawer {
+  width: 100%;
+  height: 100%;
+  position: static;
+  border-right: none;
+  padding: 12px 10px;
+}
+
+.logo {
+  height: 30px;
+  width: auto;
+  align-self: flex-start;
+  display: block;
+  margin: 4px 8px 20px;
+}
+
+.navLabel {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #aab0a6;
+  padding: 0 8px 7px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  padding: 9px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 13.5px;
+  text-align: left;
+  background: transparent;
+  color: #646b64;
+}
+
+.navItem:hover {
+  background: #f5f6f3;
+}
+
+.navItemActive,
+.navItemActive:hover {
+  background: #eef6f0;
+  color: #15803d;
+}
+
+.navItemLabel {
+  flex: 1;
+}
+
+.badge {
+  min-width: 19px;
+  height: 19px;
+  padding: 0 6px;
+  border-radius: 6px;
+  background: #eef6f0;
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #f7f7f5;
+  border: 1px solid #ededeb;
+  border-radius: 11px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #232a25;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+.accountInfo {
+  line-height: 1.25;
+  min-width: 0;
+  flex: 1;
+}
+
+.accountEmail {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #1c2620;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.accountRole {
+  font-size: 11px;
+  color: #9aa097;
+}
+
+.logout {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  border-radius: 7px;
+  color: #9aa097;
+}
+
+.logout:hover {
+  background: #ececea;
+}

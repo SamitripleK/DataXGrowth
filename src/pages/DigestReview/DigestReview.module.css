@@ -1,0 +1,284 @@
+.page {
+  max-width: 1240px;
+  margin: 0 auto;
+  animation: dxgFade 0.3s ease both;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ededeb;
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(17, 24, 28, 0.04);
+}
+
+.headerCard {
+  padding: 18px 20px;
+  margin-bottom: 16px;
+}
+
+.crumb {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 7px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #9aa097;
+  letter-spacing: 0.5px;
+}
+
+.crumbSep {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #cdd1c9;
+}
+
+.title {
+  margin: 0 0 11px;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #16201a;
+}
+
+.pills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 7px;
+}
+
+.pillWarn {
+  color: #9a6700;
+  background: #fdf4e3;
+}
+
+.pillDanger {
+  color: #c2342f;
+  background: #fdecea;
+}
+
+.pillNeutral {
+  color: #5a625a;
+  background: #f0f1ed;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #e0a23b;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 13px;
+  font-size: 12.5px;
+  color: #6c726a;
+}
+
+.metaItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.actionBar {
+  padding: 14px 18px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.warn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 220px;
+  font-size: 13px;
+  color: #8a6312;
+  font-weight: 600;
+}
+
+.previewHead {
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f0ee;
+}
+
+.previewTitle {
+  margin: 0 0 3px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #16201a;
+}
+
+.previewSub {
+  margin: 0;
+  font-size: 12.5px;
+  color: #9aa097;
+}
+
+.previewBody {
+  padding: 18px 20px;
+}
+
+.channelBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1d1c1d;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f1ee;
+}
+
+.message {
+  display: flex;
+  gap: 11px;
+}
+
+.appAvatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  background: #16201a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  gap: 1.5px;
+}
+
+.bar {
+  width: 3px;
+  height: 11px;
+  border-radius: 2px;
+  background: #34d27b;
+}
+
+.msgHead {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 5px;
+}
+
+.appName {
+  font-size: 14px;
+  font-weight: 800;
+  color: #1d1c1d;
+}
+
+.appTag {
+  font-size: 10px;
+  font-weight: 700;
+  color: #616061;
+  background: #e8e8e6;
+  border-radius: 3px;
+  padding: 1px 5px;
+  letter-spacing: 0.3px;
+}
+
+.msgTime {
+  font-size: 11.5px;
+  color: #a0a69d;
+}
+
+.msgBody {
+  font-size: 13.5px;
+  line-height: 1.62;
+  color: #1d1c1d;
+}
+
+.msgTitle {
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.statusPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #9a6700;
+  background: #fdf4e3;
+  padding: 3px 9px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e0a23b;
+}
+
+.insight {
+  margin-bottom: 11px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.action {
+  font-weight: 700;
+  color: #0b6e3b;
+}
+
+.muted {
+  color: #616061;
+}
+
+.platformWatch {
+  padding: 11px 13px;
+  background: #f6f7f4;
+  border-radius: 9px;
+  margin-bottom: 11px;
+}
+
+.openTitle {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.openItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.bullet {
+  color: #a0a69d;
+  margin-top: 1px;
+}
+
+.previewFooter {
+  display: flex;
+  gap: 9px;
+  padding: 14px 20px;
+  border-top: 1px solid #f0f0ee;
+  background: #fbfbfa;
+}

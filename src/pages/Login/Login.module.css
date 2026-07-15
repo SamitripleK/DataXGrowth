@@ -1,0 +1,88 @@
+.page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: radial-gradient(900px 480px at 70% -16%, #dff0e5 0%, #f2f2ee 58%);
+}
+
+.card {
+  width: 396px;
+  max-width: 100%;
+  background: #fff;
+  border: 1px solid #ededeb;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px -28px rgba(17, 28, 22, 0.3);
+  padding: 40px 36px;
+  animation: dxgFade 0.45s ease both;
+}
+
+.logo {
+  display: block;
+  height: 30px;
+  width: auto;
+  margin: 0 auto 28px;
+}
+
+.title {
+  margin: 0 0 8px;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #16201a;
+}
+
+.subtitle {
+  margin: 0 0 26px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #6c726a;
+  text-align: center;
+}
+
+.googleButton {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.googleIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 22px 0 16px;
+}
+
+.dividerLine {
+  flex: 1;
+  height: 1px;
+  background: #eef0eb;
+}
+
+.dividerText {
+  font-size: 11px;
+  color: #aab0a6;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.footer {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #a0a69d;
+  text-align: center;
+}

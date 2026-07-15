@@ -1,0 +1,14 @@
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  background: #f6f7f4;
+  border: 1px solid #ecefe9;
+  border-radius: var(--radius-md);
+}
+
+.image {
+  object-fit: contain;
+  display: block;
+}

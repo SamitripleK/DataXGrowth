@@ -1,0 +1,31 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: 18px 0;
+}
+
+.divider {
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text-body, #1c2620);
+}
+
+.description {
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.action {
+  flex: none;
+}

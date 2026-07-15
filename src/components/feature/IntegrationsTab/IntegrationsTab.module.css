@@ -1,0 +1,77 @@
+.intro {
+  margin: 0 0 14px;
+  font-size: 13px;
+  color: #6c726a;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.tile {
+  background: #fff;
+  border: 1px solid #ededeb;
+  border-radius: 12px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 1px 2px rgba(17, 24, 28, 0.04);
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.nameRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1c2620;
+}
+
+.status {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.statusConnected {
+  color: #15803d;
+  background: #e7f6ec;
+}
+
+.statusIdle {
+  color: #7c857d;
+  background: #f1f3f0;
+}
+
+.statusDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.description {
+  font-size: 12px;
+  color: #9aa097;
+  margin-top: 3px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

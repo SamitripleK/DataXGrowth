@@ -1,0 +1,60 @@
+.page {
+  min-height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  background: var(--color-canvas);
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 56px 32px 72px;
+  animation: dxgFade 0.4s ease both;
+}
+
+.logo {
+  height: 30px;
+  width: auto;
+  display: block;
+  margin-bottom: var(--space-10);
+}
+
+.progressHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+
+.progressLabel {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: var(--color-text-muted);
+}
+
+.progressCount {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #2a2820;
+  font-variant-numeric: tabular-nums;
+}
+
+.cards {
+  margin-top: var(--space-10);
+}
+
+.footer {
+  display: block;
+  margin-top: 28px;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 16px 56px;
+  }
+}

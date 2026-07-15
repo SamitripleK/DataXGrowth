@@ -1,0 +1,434 @@
+.grid {
+  display: grid;
+  grid-template-columns: 288px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.leftColumn {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ededeb;
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(17, 24, 28, 0.04);
+}
+
+.progressCard {
+  padding: 16px 18px;
+}
+
+.progressHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.progressLabel {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #3f463f;
+}
+
+.progressPct {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--color-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.track {
+  height: 7px;
+  border-radius: 5px;
+  background: #eef0eb;
+  overflow: hidden;
+}
+
+.trackFill {
+  height: 100%;
+  border-radius: 5px;
+  background: var(--color-primary);
+  transition: width 0.35s ease;
+}
+
+.stepNav {
+  padding: 8px;
+}
+
+.stepItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 10px;
+  padding: 11px;
+}
+
+.stepItemActive {
+  background: #eef6f0;
+}
+
+.stepNum {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #eef0ec;
+  color: #7c8278;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  margin-top: 1px;
+  font-variant-numeric: tabular-nums;
+}
+
+.stepNumActive {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.stepMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.stepTitleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.stepTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: #3f463f;
+}
+
+.stepTitleActive {
+  color: #15663a;
+}
+
+.stepPct {
+  font-size: 11px;
+  font-weight: 700;
+  color: #9aa097;
+  font-variant-numeric: tabular-nums;
+}
+
+.stepPctActive {
+  color: var(--color-primary);
+}
+
+.stepBar {
+  display: block;
+  height: 4px;
+  border-radius: 3px;
+  background: #eef0eb;
+  margin: 6px 0 5px;
+  overflow: hidden;
+}
+
+.stepBarFill {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  background: #c2c7bf;
+}
+
+.stepBarFillActive {
+  background: var(--color-primary);
+}
+
+.stepCaption {
+  display: block;
+  font-size: 10.5px;
+  color: #a0a69d;
+  line-height: 1.35;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tip {
+  background: #f2f7f3;
+  border: 1px solid #d9ecdf;
+  border-radius: 14px;
+  padding: 14px 15px;
+  display: flex;
+  gap: 10px;
+  color: #3f6a4d;
+}
+
+.tipText {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.rightColumn {
+  min-width: 0;
+}
+
+.formHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 20px 22px;
+  border-bottom: 1px solid #f0f0ee;
+}
+
+.formTitle {
+  margin: 0 0 4px;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  color: #16201a;
+}
+
+.formSubtitle {
+  margin: 0;
+  font-size: 13px;
+  color: #8f948c;
+}
+
+.formBody {
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.sectionTitleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px;
+  margin-bottom: 3px;
+}
+
+.sectionTitleLeft {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 14.5px;
+  font-weight: 800;
+  color: #1c2620;
+}
+
+.countBadge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #8f948c;
+  background: #f0f1ed;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.sectionHelper {
+  margin: 0 0 13px;
+  font-size: 12px;
+  color: #9aa097;
+  line-height: 1.5;
+}
+
+.sectionSpacer {
+  height: 11px;
+}
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.field {
+  min-width: 0;
+}
+
+.fieldFull {
+  grid-column: 1 / -1;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #5c635b;
+  margin-bottom: 6px;
+}
+
+.req {
+  color: #dd5341;
+}
+
+.fieldHelper {
+  margin: 6px 0 0;
+  font-size: 11px;
+  color: #a0a69d;
+  line-height: 1.45;
+}
+
+.minmax {
+  display: flex;
+  gap: 9px;
+}
+
+.lockedBox {
+  border: 1px dashed #d6dad2;
+  border-radius: 11px;
+  padding: 26px 20px;
+  text-align: center;
+  background: #fafbf9;
+}
+
+.lockedText {
+  margin: 0 auto 13px;
+  font-size: 12.5px;
+  color: #6c726a;
+  max-width: 320px;
+  line-height: 1.5;
+}
+
+.lockedActions {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.advanced {
+  border: 1px solid #ededeb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.advancedHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  background: #fafbf9;
+  cursor: pointer;
+  text-align: left;
+}
+
+.advancedHeader:hover {
+  background: #f5f6f3;
+}
+
+.advancedIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: #f0f1ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  color: #7c8278;
+}
+
+.advancedTitle {
+  display: block;
+  font-weight: 800;
+  font-size: 13.5px;
+  color: #1c2620;
+}
+
+.advancedSub {
+  display: block;
+  font-size: 11.5px;
+  color: #9aa097;
+  margin-top: 1px;
+}
+
+.advancedList {
+  padding: 8px;
+  border-top: 1px solid #f0f0ee;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.advancedItem {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 9px;
+  padding: 10px 11px;
+}
+
+.advancedItem:hover {
+  background: #f7f7f5;
+}
+
+.advancedItemNum {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #eef0ec;
+  color: #7c8278;
+  font-weight: 700;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+.advancedItemMain {
+  flex: 1;
+}
+
+.advancedItemTitle {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #3f463f;
+}
+
+.advancedItemCaption {
+  display: block;
+  font-size: 10.5px;
+  color: #a0a69d;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .leftColumn {
+    position: static;
+  }
+  .fieldGrid {
+    grid-template-columns: 1fr;
+  }
+}

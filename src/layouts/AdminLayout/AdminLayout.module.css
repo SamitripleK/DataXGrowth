@@ -1,0 +1,53 @@
+.shell {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: #f7f7f5;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: #f7f7f5;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 28px 56px;
+}
+
+/* Mobile: top bar + drawer nav */
+.mobileShell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: #f7f7f5;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: #fff;
+  border-bottom: 1px solid #ededeb;
+  flex: none;
+}
+
+.topbarLogo {
+  height: 26px;
+  width: auto;
+  display: block;
+}
+
+.mobileContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 16px 40px;
+}
