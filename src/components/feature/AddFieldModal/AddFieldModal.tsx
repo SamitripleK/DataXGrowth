@@ -1,21 +1,30 @@
 import { Button, Form, Input, Modal, Select } from "antd";
+import { DeleteOutlined, PlusOutlined } from "@ant-design/icons";
 import { ProfileFieldType } from "@/types/profile";
 import type { AddFieldFormValues, AddFieldModalProps } from "./types";
 
 const FIELD_TYPE_OPTIONS = [
   { value: ProfileFieldType.Text, label: "Text" },
   { value: ProfileFieldType.Area, label: "Long text" },
-  { value: ProfileFieldType.Url, label: "URL" },
-  { value: ProfileFieldType.Select, label: "Dropdown" },
+  { value: ProfileFieldType.Number, label: "Number" },
+  { value: ProfileFieldType.Toggle, label: "Yes / No" },
+  { value: ProfileFieldType.Select, label: "Single select" },
+  { value: ProfileFieldType.MultiSelect, label: "Multi-select" },
   { value: ProfileFieldType.Chips, label: "Tags" },
-  { value: ProfileFieldType.Toggle, label: "Toggle" },
 ];
+
+const hasOptions = (type?: ProfileFieldType) =>
+  type === ProfileFieldType.Select || type === ProfileFieldType.MultiSelect;
 
 export const AddFieldModal = ({ open, onClose, onAdd }: AddFieldModalProps) => {
   const [form] = Form.useForm<AddFieldFormValues>();
+  const type = Form.useWatch("type", form);
 
   const handleFinish = (values: AddFieldFormValues) => {
-    onAdd(values.label.trim(), values.type);
+    const options = (values.options ?? [])
+      .map((option) => option?.label?.trim())
+      .filter((label): label is string => Boolean(label));
+    onAdd(values.label.trim(), values.type, hasOptions(values.type) ? options : undefined);
     form.resetFields();
     onClose();
   };
@@ -62,6 +71,41 @@ export const AddFieldModal = ({ open, onClose, onAdd }: AddFieldModalProps) => {
         >
           <Select options={FIELD_TYPE_OPTIONS} aria-label="Field type" />
         </Form.Item>
+
+        {hasOptions(type) ? (
+          <Form.Item label="Options" style={{ marginBottom: 0 }}>
+            <Form.List name="options">
+              {(optionFields, { add, remove }) => (
+                <>
+                  {optionFields.map((optionField) => (
+                    <div
+                      key={optionField.key}
+                      style={{ display: "flex", gap: 8, alignItems: "flex-start", marginBottom: 8 }}
+                    >
+                      <Form.Item
+                        name={[optionField.name, "label"]}
+                        style={{ flex: 1, marginBottom: 0 }}
+                        rules={[{ required: true, message: "Option label is required" }]}
+                      >
+                        <Input placeholder="Option label" aria-label="Option label" />
+                      </Form.Item>
+                      <Button
+                        type="text"
+                        danger
+                        icon={<DeleteOutlined />}
+                        onClick={() => remove(optionField.name)}
+                        aria-label="Remove option"
+                      />
+                    </div>
+                  ))}
+                  <Button type="dashed" block icon={<PlusOutlined />} onClick={() => add()}>
+                    Add option
+                  </Button>
+                </>
+              )}
+            </Form.List>
+          </Form.Item>
+        ) : null}
       </Form>
     </Modal>
   );
